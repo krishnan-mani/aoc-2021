@@ -5,5 +5,7 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.3"]
                  [cider/cider-nrepl "0.24.0"]]
+  :profiles {:kaocha {:dependencies [[lambdaisland/kaocha "1.60.972"]]}}
+  :aliases {"kaocha" ["with-profile" "+kaocha" "run" "-m" "kaocha.runner"]}
   :main aoc-2021.core
   :repl-options {:init-ns aoc-2021.core})
