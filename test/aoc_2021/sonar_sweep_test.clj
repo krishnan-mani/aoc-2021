@@ -2,5 +2,5 @@
   (:require [clojure.test :refer :all]
             [aoc-2021.sonar-sweep :refer :all]))
 
-(deftest add-test
-  (is (= 1 (add 1 0))))
+(deftest count-monotonic-increases-test
+  (is (= 0 (count-monotonic-increases []))))
