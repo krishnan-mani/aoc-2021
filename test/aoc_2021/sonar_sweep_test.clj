@@ -8,4 +8,4 @@
   )
 
 (deftest count-monotonic-increases-test
-  (is (= 0 (count-monotonic-increases []))))
+  (is (= [[1] [0 1]] (count-monotonic-increases [1 2 2 3 2]))))
